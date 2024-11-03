@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "ChatGPT Search Engine",
+  "description": "Adds ChatGPT as a search engine",
+  "version": "1.0",
+  "author": "Fabian Druschke",
+  "homepage_url": "https://github.com/Knogle/firefox-chatgpt-addon",
+  "developer": {
+    "name": "Fabian Druschke",
+    "url": "https://github.com/Knogle/chatgpt-addon"
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "ChatGPT",
+      "search_url": "https://chat.openai.com/?query={searchTerms}",
+      "keyword": "@chatgpt",
+      "favicon_url": "https://chat.openai.com/favicon.ico",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
+
